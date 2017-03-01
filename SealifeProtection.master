@@ -1,0 +1,53 @@
+<%@ Master Language="C#" %>
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        lblDate.Text = DateTime.Now.ToLongDateString();
+    }
+    
+</script>
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="banner">
+            <p />
+            <asp:Label ID="Title" runat="server" Text="Sea Life Protection" /><br />
+            <asp:Label ID="subTitle" runat="server" Text="We are one of the biggest Ocean Charity in Australia focuing on ocean wildlife." />
+            <p />
+        </div>
+        <table id="masterTable">
+            <tr><td></td><td>
+                    <div id="breadcrumbs">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                            <PathSeparatorTemplate>  -->  </PathSeparatorTemplate>
+                        </asp:SiteMapPath>
+                    </div>
+                         </td></tr>
+            <tr>
+                <td class="sidebar">
+                    <div class="border1" ><asp:Menu StaticDisplayLevels="2" ID="Menu1" runat="server"
+                        DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="25" >
+                        <StaticMenuItemStyle CssClass="menu" />
+                        <DynamicHoverStyle CssClass="menu" />
+                        <DynamicMenuItemStyle CssClass="menu" />
+                        <StaticHoverStyle CssClass="menu" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" /></div></td>
+                <td rowspan="2" class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+                </td></tr>
+                 <tr><td><div class="border2">
+                    <asp:Calendar ID="Calendar" runat="server"  EnableTheming="true">
+                       <SelectedDayStyle CssClass="choosedDay" />
+                    </asp:Calendar></div>
+                </td>
+            </tr></table>
+      <div class="footer">Copyright Sealife Protection <span class="space"/>
+                    <asp:Label ID="lblDate" runat="server" /></div>
+    </form>
+</body>
+</html>

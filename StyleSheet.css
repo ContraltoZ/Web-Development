@@ -1,0 +1,280 @@
+body
+{
+    font-family: Sans-Serif;
+    text-align:left;
+    /*background-image: url("img/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;*/
+}
+.ScrollStyleY
+{
+    max-height: 100%;
+    overflow-y: scroll;
+}
+.ScrollStyleX
+{
+    max-width: 100%;
+    overflow-x: scroll;
+}
+a
+{
+	color: #2F4F4F;
+	text-decoration: none;
+}
+a:hover
+{
+    color: #A3C6FD;
+    font-weight:600;
+    text-decoration:underline;
+}
+.space
+{
+    margin:15px;
+}
+/*Master Page*/
+#banner
+{
+    height:160px;
+    background-image: url("img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+	text-align: center;
+    padding:40px 0px 40px 0px;
+    border-bottom:8px inset lightgrey;
+}
+#Title
+{
+    margin-top:80px;
+    height:50px;
+    line-height:120px;
+    font-family: italic bold Georgia, serif;
+    color:white;
+    font-size: 34px;
+}
+#subTitle
+{
+    height:30px;
+    line-height:10px;
+    font-family: italic bold Georgia, serif;
+    color:white;
+    font-size: 20px;
+    margin-top:0px;
+}
+.litBannerTitle
+{
+    font-size:22px;
+    color:antiquewhite;
+}
+#masterTable
+{
+    margin:0px auto;
+    width:824px;
+    text-align:center;
+    vertical-align:top;
+    float:none;
+
+}
+.sidebar
+{
+    width:240px;
+    padding-top:4px;
+    vertical-align:top;
+    float:none;
+}
+.menu
+{
+	font:italic bold 14px/30px Georgia, serif;
+    z-index:300;
+	color: navy;
+	height: 35px;
+    text-align:left;
+    background-color:#EBECED;  opacity:0.9;
+    margin:0px 5px 0px 5px;
+}
+#Calendar
+ {
+    font: italic 13px Georgia, serif;
+    opacity: 0.8;
+    border-width: 0px;
+    Width: 220px;
+    height: 80%;
+    color: whitesmoke;
+    margin: 8px;
+}
+.choosedDay
+{
+    background:url(img/icon.jpg) no-repeat #999;
+    background-size:cover;
+    color:navy;
+}
+#breadcrumbs {
+    height: 18px;
+    font: italic 12px Georgia;
+    text-align:left;
+}
+.footer
+{
+	font-size: 14px;
+	color: white;
+	background-color: navy;
+	height: 20px;
+    width:100%;
+    vertical-align:bottom;
+    float:none;
+}
+
+/*Home Page*/
+
+.tablecontent
+{
+    font:italic 16px Georgia, serif;
+    /*border:18px;*/
+    text-align: center;
+    vertical-align:top;
+    float:left;
+    z-index:1;
+}
+.border1
+{
+    font:300  13px verdana;
+    color: navy;
+    height:220px;width:240px;
+    text-align:left;
+    padding:20px;
+    border:8px double #DEEAFE;
+    background-color: #EBECED;
+    margin:8px 2px 8px 2px;
+}
+.border2
+{
+    font:300  13px verdana;
+    color: whitesmoke;
+    padding:20px;
+    height:220px;width:240px;
+    text-align:left;
+    border:8px double #EBECED;
+    background-color: #607DA6;
+    margin:8px 2px 8px 2px;
+}
+.border2 a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.ad
+{
+    font:italic bold 13px/20px arial, serif;
+    color: whitesmoke;
+    padding:8px;
+    height:232px;width:252px;
+    text-align:left;
+    border:8px double #DEEAFE;
+    background-color: #EBECED;
+    margin:8px 2px 8px 2px;
+}
+/*Registoration*/
+.inputTable
+{
+    width: 550px; height: 520px; 
+    font:normal 17px Verdana;
+    border-collapse: collapse; 
+    background-color: #ffffff; opacity:0.9;
+    text-align:center;
+    position:absolute;
+}
+.inputTable td
+{
+    height: 30px;
+    vertical-align:middle;
+}
+.label {
+    width: 31%;
+    text-align:right;
+    padding-right:6px;
+}
+.textbox
+{
+    width:36%;
+    text-align:left;
+    float:none;
+}
+.errormessage
+ {
+    width:33%;
+    text-align:left;
+    font:italic 14px arial,verdana;
+    color:darkorange;
+}
+#outputPanel
+{
+    float:left;
+    position:relative;
+}
+#outputTable
+{
+    border: 1pt solid #6666FF; width: 100%; height: 520px;
+    font:normal 16px Verdana;
+    background-color: #ffffff;
+    text-align:left;
+}
+#outputTable td
+{
+    height: 20px;
+    width: 150px;
+    vertical-align:middle;
+    text-align:left;
+}
+.label
+{
+    font:600 15px verdana;
+    margin-left:28px;
+}
+.message
+{
+    font:600 15px verdana;
+    text-align:left;
+}
+/*Others*/
+.border
+{
+    font:300  15px verdana;
+    color: whitesmoke;
+    height:516px;width:550px;
+    text-align:left;
+    border:8px double whitesmoke;
+    background-color: #607DA6;
+    margin:8px 2px 8px 2px;
+    padding:20px;
+}
+.border a
+{
+	color: whitesmoke;
+	text-decoration: none;
+}
+.mapBorder
+{
+    background-image: url(img/regBack.jpg);
+    background-size: cover;
+    font: bold 25px verdana;
+    height:516px; width:550px;
+    text-align:left;
+    border:8px double whitesmoke;
+    margin:8px 2px 8px 2px;
+    padding:20px;
+    color:black;
+}
+/*.map
+{
+    font-size:25px;
+    color:black;
+}*/
+.successmessage
+{
+    Font-family:"Arial"; color:blue; font-size:10pt; font-style:italic;
+    float:left;
+}
+.firstLetterBig p::first-letter
+{
+    font:500 24px verdana;
+    color: whitesmoke;
+}
