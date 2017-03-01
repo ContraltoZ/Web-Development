@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Login</title>
+    <h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+</h:head>
+
+<h:body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+        <div class="navbar-brand">
+        Welcome to Government Services System</div></div>     
+<center>
+    <h3> Login</h3>
+<form method="POST" action="j_security_check">
+    <table class="table" align="center" style="width: 35%; text-align: center; line-height: 1.6">
+        
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="j_username" class="input-sm"/></td>
+        </tr>
+        <tr>
+            <td>Password:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="password" name="j_password" class="input-sm"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Login"/></td>
+        </tr>
+    </table>
+    
+</form></center></div>
+</h:body>
+</html>
+
